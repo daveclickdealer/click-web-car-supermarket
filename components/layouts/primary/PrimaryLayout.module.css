@@ -1,0 +1,7 @@
+.main {
+  @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+}
+
+.main > section {
+  padding: 32px;
+}
