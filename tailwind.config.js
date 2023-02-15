@@ -6,6 +6,10 @@ module.exports = {
   ],
   // Ensure these match with .storybook/preview.js
   theme: {
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+      code: ["monospace"],
+    },
     screens: {
       xs: "375px",
       sm: "600px",
@@ -16,6 +20,7 @@ module.exports = {
     extend: {
       colors: {
         "click-blue": "#121643",
+        para: "#555555",
       },
     },
   },
