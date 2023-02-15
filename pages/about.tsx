@@ -1,6 +1,7 @@
+import FooterBlock from "@/components/blocks/footer/FooterBlock";
+import HeaderBlock from "@/components/blocks/header/HeaderBlock";
 import PrimaryLayout from "../components/layouts/primary/PrimaryLayout";
-import SidebarLayout from "../components/layouts/sidebar/SidebarLayout";
-import { NextPageWithLayout } from "./pages";
+import { NextPageWithLayout } from "./page";
 
 const About: NextPageWithLayout = () => {
   return (
@@ -35,11 +36,12 @@ const About: NextPageWithLayout = () => {
 
 export default About;
 
-About.getLayout = (page: any) => {
+About.getLayout = (page) => {
   return (
-    <PrimaryLayout>
-      <SidebarLayout />
-      {page}
-    </PrimaryLayout>
+    <>
+      <HeaderBlock />
+      <PrimaryLayout>{page}</PrimaryLayout>
+      <FooterBlock />
+    </>
   );
 };
