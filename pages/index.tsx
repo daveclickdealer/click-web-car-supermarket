@@ -1,6 +1,6 @@
-import FooterBlock from "@/components/blocks/footer/FooterBlock";
-import HeaderBlock from "@/components/blocks/header/HeaderBlock";
-import PrimaryLayout from "@/components/layouts/primary/PrimaryLayout";
+import Footer from "@components/footer/Footer";
+import Header from "@components/header/Header";
+import PrimaryLayout from "@components/layouts/primary/PrimaryLayout";
 import { NextPageWithLayout } from "./page";
 
 const Home: NextPageWithLayout = () => {
@@ -28,9 +28,9 @@ export default Home;
 Home.getLayout = (page) => {
   return (
     <>
-      <HeaderBlock />
+      <Header />
       <PrimaryLayout>{page}</PrimaryLayout>
-      <FooterBlock />
+      <Footer />
     </>
   );
 };

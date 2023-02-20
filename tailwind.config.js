@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./lib/components/**/*.{js,ts,jsx,tsx}",
   ],
   // Ensure these match with .storybook/preview.js
   theme: {
@@ -19,7 +20,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        "click-blue": "#121643",
+        primary: "#000000",
+        secondary: "#e4e4e4",
+        accent: "#16d9d9",
         para: "#555555",
       },
     },

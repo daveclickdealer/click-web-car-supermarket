@@ -11,7 +11,7 @@ class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap"
             rel="stylesheet"
-          />
+          ></link>
           <Script
             src="https://kit.fontawesome.com/579ffff675.js"
             strategy="beforeInteractive"
